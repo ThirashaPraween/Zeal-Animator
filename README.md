@@ -9,7 +9,7 @@ Zeal Animator Version - 1.0 build code - 10002
 
 - Easy animating
 - Fully CSS
-- ✨100% Build speed✨
+- ✨100% Loading speed✨
 
 ## [Documentation](https://thirashapraween.github.io/Zeal-Animator/)
 
