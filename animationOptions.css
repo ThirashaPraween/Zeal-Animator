@@ -1,0 +1,17 @@
+.contsection{
+    margin: 0 50px;
+}
+
+.contsection ul li{
+    list-style-type: disc;
+    padding-bottom: 1.5rem;
+}
+.litem label{
+    background-color: #EFE4E4;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+section{
+    margin-bottom: 2.5rem;
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Thirasha" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://res.cloudinary.com/thirashacdi/raw/upload/v1619687878/ZealAnimator/v1.0/ZealAnimator-v1.0.css" />
+    <title>Zeal Animator - Color Effects</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="shortcut icon" type="image/png" href="./zealnewtrans.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css" />
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+      <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="." class="logo">
+                <img src="./zealnewtrans.png" height="100" alt="" />
+                <!-- Zeal Animator -->
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section"><a href=".#welcome" class="menu-item">Home</a></li>
+                <li class="scroll-to-section"><a href=".#about" class="menu-item">Features</a></li>
+                <li class="scroll-to-section"><a href="Doc.html" class="menu-item">Documentation</a>
+                </li>
+                <li class="submenu">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="Colors.html" class="menu-item">Basic Colors</a></li>
+                        <li><a href="Colors.html#gradients" class="menu-item">Gradients</a></li>
+                        <li><a href="Cursors.html" class="menu-item">Cursors</a></li>
+                        <li><a href="Opacity.html" class="menu-item">Opacity</a></li>
+                        <li><a href="Animations.html" class="menu-item">Animations</a></li>
+                        <li><a href="ColorEffects.html" class="menu-item">Color Effects</a></li>
+                        <li><a href="ImageFilters.html" class="menu-item">Image Filters</a></li>
+                        <li><a href="AnimationOptions.html" class="menu-item">Animation Options</a></li>
+                    </ul>
+                </li>
+                <li class="scroll-to-section"><a href="https://github.com/ThirashaPraween" class="menu-item">Github</a></li>
+            </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="welcome-area-none" id="welcome">
+      <div class="header-text">
+        <div class="container">
+          <div class="row">
+            <div class="left-text col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1>Zeal Animator <em>Animations</em></h1>
+              <!-- <h5 class="heading-titles">Main Colors</h5> -->
+              <!-- CSS Box -->
+              <p>
+                Animations can use with any html element.
+                <span style="color: darkred"
+                  >When you use this animations, you have to use other
+                  optional classes.
+              </p>
+              <section id="pulse">
+                <h4><a href="#pulse"># Pulse</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <div class="box-colored z-pulse zt-2 z-repeat">Pulse</div>
+              <div class="box-colored z-opulse zt-2 z-repeat">O Pulse</div>
+              <div class="box-colored zhover-pulse ztt-1">Pulse Hover</div>
+            </div>
+            <br />
+            <div class="codeheader" id="codeheader_css">Pulse</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # Here <span style="color: brown;">zt-2</span> class for animation time 2s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+  &lt;div class="<span style="color: yellow">z-pulse <span style="color: brown;">zt-2 z-repeat</span></span>">Pulse&lt;div/>
+  &lt;div class="<span style="color: yellow">z-opulse <span style="color: brown;">zt-2 z-repeat</span></span>">O Pulse&lt;div/>
+
+  # <span style="color: brown;">ztt-1</span> class for animation transition time 1s.    
+
+  &lt;div class="<span style="color: yellow">zhover-pulse <span style="color: brown;">ztt-1</span></span>">Pulse Hover&lt;div/>
+              </code></pre>
+            </div>
+            </section>
+            <br>
+            <section id="roll">
+              <h4><a href="#roll"># Roll</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <div class="box-colored z-roll zt-2 z-repeat">Roll</div>
+              <div class="box-colored z-oroll zt-2 z-repeat">O Roll</div>
+              <div class="box-colored z-roll-li zt-2 z-repeat z-rev">Roll Linear</div>
+              <div class="box-colored zhover-roll ztt-2">Roll Hover</div>
+            </div>
+            <br />
+            <div class="codeheader" id="codeheader_css">Roll</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # Here <span style="color: brown;">zt-2</span> class for animation time 2s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+  &lt;div class="<span style="color: yellow">z-roll <span style="color: brown;">zt-2 z-repeat</span></span>">Roll&lt;div/>
+  &lt;div class="<span style="color: yellow">z-oroll <span style="color: brown;">zt-2 z-repeat</span></span>">O Roll&lt;div/>
+
+  # Here <span style="color: brown;">zt-2</span> class for animation time 2s, <span style="color: brown;">z-repeat</span> class for repeat the same animation.
+  # <span style="color: brown;">z-rev</span> for reverse the animation            
+
+  &lt;div class="<span style="color: yellow">z-roll-li <span style="color: brown;">zt-2 z-repeat z-rev</span></span>">Roll Linear&lt;div/>
+
+  # <span style="color: brown;">ztt-2</span> class for animation transition time 2s.    
+
+  &lt;div class="<span style="color: yellow">zhover-roll <span style="color: brown;">ztt-2</span></span>">Roll Hover&lt;div/>
+              </code></pre>
+            </div>
+            </section>
+            <br>
+            <section id="bigmose">
+              <h4><a href="#bigmose"># Bigmose</a></h4><br>
+              <div style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            " >
+            <a href="./components/Bigmose.html" target="_blank" class="box-colored">View Bigmose</a>
+            <a href="./components/Bigmose.html" target="_blank" class="box-colored ">View O Bigmose</a>
+          </div>
+          <br />
+          <div class="codeheader" id="codeheader_css">Bigmose</div>
+          <div id="codebox">
+            <pre><code data-language="css">
+# Here <span style="color: brown;">zt-5</span> class for animation time 5s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+&lt;div class="<span style="color: yellow">z-bigmose <span style="color: brown;">zt-5 z-repeat</span></span>">Roll&lt;div/>
+&lt;div class="<span style="color: yellow">z-obigmose <span style="color: brown;">zt-5 z-repeat</span></span>">O Roll&lt;div/>
+            </code></pre>
+          </div>
+         </section>
+              
+         <br>
+            <section id="bounce">
+              <h4><a href="#bounce"># Bounce</a></h4><br>
+              <div style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            " >
+            <div class="box-colored z-bounce zt-2 z-repeat">Bounce</div>
+            <div class="box-colored z-obounce zt-2 z-repeat">O Bounce</div>
+            <div class="box-colored zhover-bounce ztt-1">Bounce Hover</div>
+          </div>
+          <br />
+          <div class="codeheader" id="codeheader_css">Bigmose</div>
+          <div id="codebox">
+            <pre><code data-language="css">
+# Here <span style="color: brown;">zt-2</span> class for animation time 2s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+&lt;div class="<span style="color: yellow">z-bounce <span style="color: brown;">zt-2 z-repeat</span></span>">Bounce&lt;div/>
+&lt;div class="<span style="color: yellow">z-obounce <span style="color: brown;">zt-2 z-repeat</span></span>">O Bounce&lt;div/>
+
+# <span style="color: brown;">ztt-1</span> class for animation transition time 1s.      
+
+&lt;div class="<span style="color: yellow">zhover-bounce <span style="color: brown;">ztt-1</span></span>">Bounce Hover&lt;div/>
+            </code></pre>
+          </div>
+         </section>
+
+         <br>
+            <section id="flash">
+              <h4><a href="#flash"># Flash</a></h4><br>
+              <div style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            " >
+            <div class="box-colored z-flash zt--6 z-repeat">Flash</div>
+            <div class="box-colored zhover-flash zt--5">Flash Hover</div>
+          </div>
+          <br />
+          <div class="codeheader" id="codeheader_css">Flash</div>
+          <div id="codebox">
+            <pre><code data-language="css">
+# Here <span style="color: brown;">zt--6</span> class for animation time 0.6s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+&lt;div class="<span style="color: yellow">z-flash <span style="color: brown;">zt--6 z-repeat</span></span>">Flash&lt;div/>
+
+# <span style="color: brown;">zt--5</span> class for animation transition time 0.5s.      
+
+&lt;div class="<span style="color: yellow">zhover-flash <span style="color: brown;">zt--5</span></span>">Flash Hover&lt;div/>
+            </code></pre>
+          </div>
+         </section>
+
+         <br>
+            <section id="tada">
+              <h4><a href="#tada"># Tada</a></h4><br>
+              <div style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            " >
+            <div class="box-colored z-tada zt-1 z-repeat">Tada</div>
+            <div class="box-colored zhover-tada zt-1">Tada Hover</div>
+          </div>
+          <br />
+          <div class="codeheader" id="codeheader_css">Tada</div>
+          <div id="codebox">
+            <pre><code data-language="css">
+# Here <span style="color: brown;">zt-1</span> class for animation time 1s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+&lt;div class="<span style="color: yellow">z-tada <span style="color: brown;">zt-1 z-repeat</span></span>">Tada&lt;div/>
+
+# <span style="color: brown;">zt-1</span> class for animation time 1s.      
+
+&lt;div class="<span style="color: yellow">zhover-tada <span style="color: brown;">zt-1</span></span>">Tada Hover&lt;div/>
+            </code></pre>
+          </div>
+         </section>
+
+         <br>
+            <section id="fadein">
+              <h4><a href="#fadein"># Fade In</a></h4><br>
+              <div style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              flex-wrap: wrap;
+            " >
+            <div class="box-colored z-fade-in zt-3 z-repeat">Fade In</div>
+            <div class="box-colored z-ofade-in zt-3 z-repeat">O Fade In</div>
+            <div class="box-colored zhover-fade-in ztt--5 z-low">Fade In Hover</div>
+          </div>
+          <br />
+          <div class="codeheader" id="codeheader_css">Fade In</div>
+          <div id="codebox">
+            <pre><code data-language="css">
+# Here <span style="color: brown;">zt-3</span> class for animation time 3s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+&lt;div class="<span style="color: yellow">z-fade-in <span style="color: brown;">zt-3 z-repeat</span></span>">Fade In&lt;div/>
+&lt;div class="<span style="color: yellow">z-ofade-in <span style="color: brown;">zt-3 z-repeat</span></span>">O Fade In&lt;div/>
+
+# <span style="color: brown;">ztt--5</span> class for animation transition time 0.5s and <span style="color: brown;">z-low</span> class for 0% opacity.      
+
+&lt;div class="<span style="color: yellow">zhover-fade-in <span style="color: brown;">ztt--5 z-low</span></span>">Fade In Hover&lt;div/>
+            </code></pre>
+          </div>
+         </section>
+
+         <br>
+         <section id="fadeout">
+           <h4><a href="#fadeout"># Fade Out</a></h4><br>
+           <div style="
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           flex-wrap: wrap;
+         " >
+         <div class="box-colored z-fade-out zt-3 z-repeat">Fade Out</div>
+         <div class="box-colored z-ofade-out zt-3 z-repeat">O Fade Out</div>
+         <div class="box-colored zhover-fade-out ztt--5">Fade Out Hover</div>
+       </div>
+       <br />
+       <div class="codeheader" id="codeheader_css">Fade Out</div>
+       <div id="codebox">
+         <pre><code data-language="css">
+# Here <span style="color: brown;">zt-3</span> class for animation time 3s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.            
+
+&lt;div class="<span style="color: yellow">z-fade-out <span style="color: brown;">zt-3 z-repeat</span></span>">Fade Out&lt;div/>
+&lt;div class="<span style="color: yellow">z-ofade-out <span style="color: brown;">zt-3 z-repeat</span></span>">O Fade Out&lt;div/>
+
+# <span style="color: brown;">ztt--5</span> class for animation transition time 0.5s.      
+
+&lt;div class="<span style="color: yellow">zhover-fade-out <span style="color: brown;">ztt--5</span></span>">Fade Out Hover&lt;div/>
+         </code></pre>
+       </div>
+      </section>
+
+      <br>
+         <section id="blur">
+           <h4><a href="#blur"># Blur</a></h4><br>
+           <div style="
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           flex-wrap: wrap;
+         " >
+         <div style="display: flex; flex-direction: column; align-items: center;">
+          <img class="z-to-blur z-repeat zt-2" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+          <p class="z-to-blur z-repeat zt-2">To Blur</p>
+        </div>
+         <div style="display: flex; flex-direction: column; align-items: center;">
+          <img class="z-blur2 z-blur-to zt-2 z-repeat" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+          <p class="z-blur2 z-blur-to zt-2 z-repeat">To Normal</p>
+        </div>
+         
+       </div>
+           <div style="
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           flex-wrap: wrap;
+         " >
+         <div style="display: flex; flex-direction: column; align-items: center;">
+          <img class="zhover-to-blur ztt-2" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+          <p class="zhover-to-blur ztt-2">To Blur Hover</p>
+        </div>
+         <div style="display: flex; flex-direction: column; align-items: center;">
+          <img class="z-blur2 zhover-blur-to ztt-1" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+          <p class="z-blur2 zhover-blur-to ztt-1">To Normal Hover</p>
+        </div>
+         
+       </div>
+       <br />
+       <div class="codeheader" id="codeheader_css">Blur</div>
+       <div id="codebox">
+         <pre><code data-language="css">
+# Here <span style="color: brown;">zt-2</span> class for animation time 2s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.       
+# <span style="color: brown;">z-blur2</span> class for blur state 2.         
+
+&lt;div class="<span style="color: yellow">z-to-blur <span style="color: brown;">zt-2 z-repeat</span></span>">To Blur&lt;div/>
+&lt;div class="<span style="color: yellow">z-blur-to <span style="color: brown;">z-blur2 zt-2 z-repeat</span></span>">To Normal&lt;div/>
+
+# <span style="color: brown;">z-blur2</span> class for blur state 2.  
+# <span style="color: brown;">ztt-1</span> class for animation transition time 1s.      
+
+&lt;div class="<span style="color: yellow">zhover-to-blur <span style="color: brown;">ztt-1</span></span>">To Blur Hover&lt;div/>
+&lt;div class="<span style="color: yellow">zhover-blur-to <span style="color: brown;">z-blur2 ztt-1</span></span>">To Normal Hover&lt;div/>
+         </code></pre>
+       </div>
+      </section>
+
+      <br>
+      <section id="grayscale">
+        <h4><a href="#grayscale"># Grayscale</a></h4><br>
+        <div style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      " >
+      <div style="display: flex; flex-direction: column; align-items: center;">
+       <img class="z-to-gray z-repeat zt-2" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+       <p class="z-to-gray z-repeat zt-2">To Gray</p>
+     </div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+       <img class="z-img-gray z-gray-to zt-2 z-repeat" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+       <p class="z-img-gray z-gray-to zt-2 z-repeat">To Normal</p>
+     </div>
+      
+    </div>
+        <div style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      " >
+      <div style="display: flex; flex-direction: column; align-items: center;">
+       <img class="zhover-to-gray ztt-1" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+       <p class="zhover-to-gray ztt-1">To Gray Hover</p>
+     </div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+       <img class="z-img-gray zhover-gray-to ztt-1" style="margin: 2px;" class="z-img-normal" src="./imgf1.jpg" height="200" alt="Image FIlter 1">
+       <p class="z-img-gray zhover-gray-to ztt-1">To Normal Hover</p>
+     </div>
+      
+    </div>
+    <br />
+    <div class="codeheader" id="codeheader_css">Grayscale</div>
+    <div id="codebox">
+      <pre><code data-language="css">
+# Here <span style="color: brown;">zt-2</span> class for animation time 2s, and <span style="color: brown;">z-repeat</span> class for repeat the same animation.       
+# <span style="color: brown;">z-img-gray</span> class for grayscale.         
+
+&lt;div class="<span style="color: yellow">z-to-gray <span style="color: brown;">zt-2 z-repeat</span></span>">To Gray&lt;div/>
+&lt;div class="<span style="color: yellow">z-gray-to <span style="color: brown;">z-img-gray zt-2 z-repeat</span></span>">To Normal&lt;div/>
+
+# <span style="color: brown;">z-img-gray</span> class for grayscale.  
+# <span style="color: brown;">ztt-1</span> class for animation transition time 1s.      
+
+&lt;div class="<span style="color: yellow">zhover-to-gray <span style="color: brown;">ztt-1</span></span>">To Blur Hover&lt;div/>
+&lt;div class="<span style="color: yellow">zhover-gray-to <span style="color: brown;">z-img-gray ztt-1</span></span>">To Normal Hover&lt;div/>
+      </code></pre>
+    </div>
+   </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
