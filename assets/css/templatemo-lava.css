@@ -723,7 +723,7 @@ welcome
   }
   .welcome-area .header-text {       
     width: 92%;
-    /* padding-top: 793px; */
+    padding-top: 100px;
   }
   .welcome-area .header-text .left-text {
     margin-top: 5%;
