@@ -12,8 +12,8 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://res.cloudinary.com/thirashacdi/raw/upload/v1619687878/ZealAnimator/v1.0/ZealAnimator-v1.0.css" />
-    <title>Zeal Animator - Image Filters</title>
+    <link rel="stylesheet" href="./ZealAnimator-v2.0.css" />
+    <title>Zeal Animator - Image Effects</title>
 
     <!-- Additional CSS Files -->
     <link rel="shortcut icon" type="image/png" href="./zealnewtrans.png" />
@@ -62,14 +62,15 @@
                 <li class="submenu">
                     <a href="#">Components</a>
                     <ul>
-                        <li><a href="Colors.html" class="menu-item">Basic Colors</a></li>
-                        <li><a href="Colors.html#gradients" class="menu-item">Gradients</a></li>
-                        <li><a href="Cursors.html" class="menu-item">Cursors</a></li>
-                        <li><a href="Opacity.html" class="menu-item">Opacity</a></li>
-                        <li><a href="Animations.html" class="menu-item">Animations</a></li>
-                        <li><a href="ColorEffects.html" class="menu-item">Color Effects</a></li>
-                        <li><a href="ImageFilters.html" class="menu-item">Image Filters</a></li>
-                        <li><a href="AnimationOptions.html" class="menu-item">Animation Options</a></li>
+                      <li><a href="Colors.html" class="menu-item">Basic Colors</a></li>
+                      <li><a href="Colors.html#gradients" class="menu-item">Gradients</a></li>
+                      <li><a href="Cursors.html" class="menu-item">Cursors</a></li>
+                      <li><a href="Elementor.html" class="menu-item">Elementor<img class="newicon" src="./assets/images/new.png" alt="new icon"></a></li>
+                      <li><a href="Opacity.html" class="menu-item">Opacity</a></li>
+                      <li><a href="Animations.html" class="menu-item">Animations</a></li>
+                      <li><a href="ColorEffects.html" class="menu-item">Color Filters</a></li>
+                      <li><a href="ImageFilters.html" class="menu-item">Image Effects<img class="newicon" src="./assets/images/new.png" alt="new icon"></a></li>
+                      <li><a href="AnimationOptions.html" class="menu-item">Animation Options</a></li>
                     </ul>
                 </li>
                 <li class="scroll-to-section"><a href="https://github.com/ThirashaPraween/Zeal-Animator" class="menu-item">Github</a></li>
@@ -90,13 +91,386 @@
         <div class="container">
           <div class="row">
             <div class="left-text col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h1>Zeal Animator <em>Image Filters</em></h1>
+              <h1>Zeal Animator <em>Image Effects</em></h1>
               <!-- <h5 class="heading-titles">Main Colors</h5> -->
               <!-- CSS Box -->
               <p>
-                Image filters can use with any valid elements.
+                Image Effects can use with any valid elements.
                 
               </p>
+
+              <section id="circle">
+                <h4><a href="#circle"># Circle</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure class="zhover-figure-circle">
+                <img src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure class="zhover-figure-circle">
+                <img src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css"> Circle Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure class="<span style="color: yellow">zhover-img-circle</span>">
+    &lt;img >
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+
+              <section id="shine">
+                <h4><a href="#shine"># Shine</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure class="zhover-figure-shine">
+                <img src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure class="zhover-figure-shine">
+                <img src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css"> Shine Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure class="<span style="color: yellow">zhover-img-shine</span>">
+    &lt;img >
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+              <section id="flashing">
+                <h4><a href="#flashing"># Flashing</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-flash" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-flash" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css"> Flashing Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-flash</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+              <section id="opacity">
+                <h4><a href="#opacity"># Opacity</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-opacity" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-opacity" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css"> Opacity Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-opacity</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+
+              <section id="blurgray">
+                <h4><a href="#blurgray"># Blur & Gray</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-blurgray" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-blurgray" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css"> Blur & Gray Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-blurgray</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+              <section id="sepia">
+                <h4><a href="#sepia"># Sepia</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-sepia" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-sepia" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css">Sepia Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-sepia</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+              <section id="rotate">
+                <h4><a href="#rotate"># Rotate</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-rotate" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-rotate" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css">Rotate Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-rotate</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+              <section id="slide">
+                <h4><a href="#slide"># Slide</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-slide" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-slide" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css">Slide Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-slide</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+
+              <section id="scaleout">
+                <h4><a href="#scaleout"># Zoom Scale Out</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-zoomscaleout" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-zoomscaleout" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+            </div>
+            <br />
+
+            <div class="codeheader" id="codeheader_css">Zoom Scale Out Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-zoomscaleout</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+              <section id="scalein">
+                <h4><a href="#scalein"># Zoom Scale In</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-zoomscalein" src="./imgf2.jpg" height="200" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-zoomscalein" src="./imgf3.jpg" height="200" alt="Image FIlter 2">
+              </figure>
+              
+              
+            </div>
+            <br />
+            <div class="codeheader" id="codeheader_css">Zoom Scale In Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-zoomscalein</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+              <section id="zoomout">
+                <h4><a href="#zoomout"># Zoom Out</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-zoomout" src="./imgf2.jpg" height="270" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-zoomout" src="./imgf3.jpg" height="270" alt="Image FIlter 2">
+              </figure>
+              
+              
+            </div>
+            <br />
+            <div class="codeheader" id="codeheader_css">Zoom Out Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-zoomout</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
+
+              <section id="zoomin">
+                <h4><a href="#zoomin"># Zoom In</a></h4><br>
+                <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              " >
+              <figure>
+                <img class="zhover-img-zoomin" src="./imgf2.jpg" height="270" alt="Image FIlter 1">
+              </figure>
+              <figure>
+                <img class="zhover-img-zoomin" src="./imgf3.jpg" height="270" alt="Image FIlter 2">
+              </figure>
+              
+              
+            </div>
+            <br />
+            <div class="codeheader" id="codeheader_css">Zoom In Hover</div>
+            <div id="codebox">
+              <pre><code data-language="css">
+  # figure tag is required element for this animation
+  # Also, you can customize figure size with style
+
+  &lt;figure>
+    &lt;img class="<span style="color: yellow">zhover-img-zoomin</span>">
+  &lt;/figure>
+              </code></pre>
+            </div>
+              </section>
 
               <section id="grays">
                 <h4><a href="#grays"># Grayscale</a></h4><br>

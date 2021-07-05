@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./ZealAnimator-v2.0.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="./zealnewtrans.png" />
+    </head>
+    <body>
+        <div id="injector" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            
+        </div>
+
+        <script>
+              function get(name) {
+        if (
+          (name = new RegExp(
+            "[?&]" + encodeURIComponent(name) + "=([^&]*)"
+          ).exec(location.search))
+        )
+          return decodeURIComponent(name[1]);
+      }
+
+      if(get('element') == "rail"){
+        var injector = document.getElementById("injector");
+        injector.innerHTML = `<p class="zhover-rail" style="font-size: 75px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorum Ipsum</p>`
+      }
+
+      if(get('element') == "rail.full"){
+        var injector = document.getElementById("injector");
+        injector.innerHTML = `<p class="zhover-rail-full" style="font-size: 75px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorum Ipsum</p>`
+      }
+
+        </script>
+    </body>
+</html>

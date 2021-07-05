@@ -1,12 +1,19 @@
 /* 
     Zeal Animator
-    - Copyright 2021-APR - CSS Script
+    - Copyright 2021-JULY - CSS Script
     - Written by ThirashaPW 
-    - Tested on Opera / Chrome / Firefox
+    - Tested on Opera / Chrome / Firefox / Edge
     - Supported with HTML 5
-    - v1.0 - 10245
+    - v2.0 - 25460
 */
 
+:root {
+    --zeal-color: #ff4500;
+}
+
+html{
+	scroll-behavior: smooth;
+}
 
 
 /* ======================= Classes ==================== */
@@ -406,41 +413,43 @@
     opacity: 0;
 }
 
-.z-to-blur{
+.z-to-blur {
     animation: toblur ease-in-out alternate;
 }
 
-.z-blur-to{
+.z-blur-to {
     animation: blurto ease-in-out alternate;
 }
 
-.zhover-to-blur{
+.zhover-to-blur {
     transition: filter ease-in-out;
 }
 
-.zhover-blur-to{
+.zhover-blur-to {
     transition: filter ease-in-out;
 }
 
-.zhover-to-blur:hover{
+.zhover-to-blur:hover {
     filter: blur(2px);
 }
 
-.zhover-blur-to:hover{
+.zhover-blur-to:hover {
     filter: blur(0px);
 }
 
-.z-to-gray{
+.z-to-gray {
     animation: colortogray ease-in-out alternate;
 }
-.zhover-to-gray:hover{
+
+.zhover-to-gray:hover {
     filter: grayscale(100%);
 }
 
-.z-gray-to{
+.z-gray-to {
     animation: graytocolor ease-in-out alternate;
 }
-.zhover-gray-to:hover{
+
+.zhover-gray-to:hover {
     filter: grayscale(0%);
 }
 
@@ -549,44 +558,53 @@
 
 
 /* Image Filters */
-.z-img-gray{
+.z-img-gray {
     filter: grayscale(100%);
 }
 
-.z-img-normal{
+.z-img-normal {
     filter: grayscale(0%);
 }
 
 
- /* blurs */
-.z-blur1{
+/* blurs */
+.z-blur1 {
     filter: blur(1px);
 }
-.z-blur2{
+
+.z-blur2 {
     filter: blur(2px);
 }
-.z-blur3{
+
+.z-blur3 {
     filter: blur(3px);
 }
-.z-blur4{
+
+.z-blur4 {
     filter: blur(4px);
 }
-.z-blur5{
+
+.z-blur5 {
     filter: blur(5px);
 }
-.z-blur6{
+
+.z-blur6 {
     filter: blur(6px);
 }
-.z-blur7{
+
+.z-blur7 {
     filter: blur(7px);
 }
-.z-blur8{
+
+.z-blur8 {
     filter: blur(8px);
 }
-.z-blur9{
+
+.z-blur9 {
     filter: blur(9px);
 }
-.z-blur10{
+
+.z-blur10 {
     filter: blur(10px);
 }
 
@@ -862,6 +880,394 @@
 .zd-10 {
     animation-delay: 10s;
 }
+
+
+
+/* ========================= Version 2.0 ======================= */
+
+
+/* Rail */
+.zhover-rail {
+    position: relative;
+}
+
+.zhover-rail::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.zhover-rail:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.zhover-rail::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+
+/* Full screen rail */
+.zhover-rail-full::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.zhover-rail-full:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.zhover-rail-full::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+
+/* Loader */
+.z-loader {
+    background-color: #ecf0f1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 100000;
+}
+
+.z-loader-el {
+    border-radius: 100%;
+    border: 7px solid var(--zeal-color);
+    margin: calc(5px*2);
+}
+
+.z-loader-el:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+}
+
+.z-loader-el:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.z-loader-el:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+.z-loader-el:nth-child(4) {
+    animation: preloader .6s ease-in-out alternate .6s infinite;
+}
+
+.z-loader-el:nth-child(5) {
+    animation: preloader .6s ease-in-out alternate .8s infinite;
+}
+
+.z-loader-el:nth-child(6) {
+    animation: preloader .6s ease-in-out alternate .10s infinite;
+}
+
+.z-loader-el:nth-child(7) {
+    animation: preloader .6s ease-in-out alternate .12s infinite;
+}
+
+.z-loader-el:nth-child(8) {
+    animation: preloader .6s ease-in-out alternate .14s infinite;
+}
+
+.z-loader-el:nth-child(9) {
+    animation: preloader .6s ease-in-out alternate .16s infinite;
+}
+
+.z-loader-el:nth-child(10) {
+    animation: preloader .6s ease-in-out alternate .18s infinite;
+}
+
+
+
+
+
+/* Zoom In #1 */
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+figure .zhover-img-zoomin {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-zoomin {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Zoom Scale In #2 */
+figure .zhover-img-zoomscalein {
+    width: 300px;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-zoomscalein {
+    width: 350px;
+}
+
+/* Zoom Out #3 */
+figure .zhover-img-zoomout {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-zoomout {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Zoom Scale Out #4 */
+figure .zhover-img-zoomscaleout {
+    width: 400px;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-zoomscaleout {
+    width: 300px;
+}
+
+/* Slide #5 */
+figure .zhover-img-slide {
+    margin-left: 30px;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-slide {
+    margin-left: 0;
+}
+
+/* Rotate #6 */
+figure .zhover-img-rotate {
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-rotate {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+
+/* Sepia #7 */
+figure .zhover-img-sepia {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-sepia {
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+}
+
+/* Blur + Gray Scale #8 */
+figure .zhover-img-blurgray {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-blurgray {
+    -webkit-filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(3px);
+}
+
+/* Opacity #9 */
+figure .zhover-img-opacity {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+figure:hover .zhover-img-opacity {
+    opacity: 0.5;
+}
+
+
+/* Flashing */
+figure:hover .zhover-img-flash {
+    opacity: 1;
+    -webkit-animation: flash2 1.5s;
+    animation: flash2 1.5s;
+}
+
+
+/* Shine */
+.zhover-figure-shine {
+    position: relative;
+}
+
+.zhover-figure-shine::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.zhover-figure-shine:hover::before {
+    -webkit-animation: shine 0.75s;
+    animation: shine 0.75s;
+}
+
+
+/* Circle */
+.zhover-figure-circle {
+    position: relative;
+}
+
+.zhover-figure-circle::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.zhover-figure-circle:hover::before {
+    -webkit-animation: circle 0.75s;
+    animation: circle 0.75s;
+}
+
+
+/* Drop Shadow */
+.z-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* New Buttons */
+.z-btn {
+    padding: 15px 30px;
+    transition: all 0.5s;
+    border: 0 none;
+    border-radius: 5em;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-right: 20px;
+    outline: none;
+}
+
+.z-ripple-down {
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #eee 50%, var(--zeal-color) 50%);
+}
+
+.z-ripple-back {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #eee 50%, var(--zeal-color) 50%);
+}
+
+.z-ripple-for {
+    background-size: 200% 100%;
+    background-position: right bottom;
+    background-image: linear-gradient(to left, #eee 50%, var(--zeal-color) 0%);
+}
+
+.z-ripple-both {
+    background-color: #eee;
+    background-image: linear-gradient(var(--zeal-color), var(--zeal-color));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+}
+
+.z-btn:hover { color: white; }
+.z-ripple-down:hover { background-position: 0 -100%; }
+.z-ripple-back:hover { background-position: 100%; }
+.z-ripple-for:hover { background-position: left bottom }
+.z-ripple-both:hover { background-size: 100% 100%; }
+
+
+/* Goto top button */
+.z-btn-gotop{
+    cursor: pointer;
+	position: fixed;
+	top: 89%;
+	left: 95%;
+	z-index: 999;
+	color: #fff;
+	background: var(--zeal-color);
+	font-size: 25px;
+	padding: 8px 8px;
+	border-radius: 100px;
+	box-shadow: 0 0 3px 2px var(--zeal-color);
+	transition: 0.3s;
+    text-decoration: none;
+}
+
+.z-btn-gotop:hover{
+	background: #fff;
+	color: #000;
+}
+
+
 
 /* ===================== Keyframes ======================= */
 @keyframes pulse {
@@ -1289,42 +1695,121 @@
 }
 
 
-@keyframes graytocolor{
-    from{
+@keyframes graytocolor {
+    from {
         filter: grayscale(100%);
     }
-    to{
+
+    to {
         filter: grayscale(0%);
 
     }
 }
 
-@keyframes colortogray{
-    from{
+@keyframes colortogray {
+    from {
         filter: grayscale(0%);
     }
-    to{
+
+    to {
         filter: grayscale(100%);
 
     }
 }
 
-@keyframes toblur{
-    from{
+@keyframes toblur {
+    from {
         filter: blur(0px);
     }
-    to{
+
+    to {
         filter: blur(2px);
 
     }
 }
 
-@keyframes blurto{
-    from{
+@keyframes blurto {
+    from {
         filter: blur(2px);
     }
-    to{
+
+    to {
         filter: blur(0px);
 
+    }
+}
+
+@keyframes preloader {
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+
+
+
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+
+@-webkit-keyframes flash2 {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash2 {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
     }
 }

@@ -1435,3 +1435,10 @@ pre code{
   margin: 1px;
   color: white;
 }
+
+.newicon{
+  height: 18px;
+  margin-top: -5px;
+  margin-left: 5px;
+  transform: rotate(40deg);
+}
