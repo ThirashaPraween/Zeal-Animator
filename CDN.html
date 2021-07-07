@@ -143,23 +143,27 @@
         document.getElementById("codeheader_css").innerText = "Zeal Animator CDN - v1.0";
       }else if(get('version') == "1.0m"){
         document.getElementById("codeheader_css").innerText = "Zeal Animator CDN - v1.0 (Minified)";
+      }else if(get('version') == "2.0"){
+        document.getElementById("codeheader_css").innerText = "Zeal Animator CDN - v2.0";
+      }else if(get('version') == "2.0m"){
+        document.getElementById("codeheader_css").innerText = "Zeal Animator CDN - v2.0 (Minified)";
       }
 
       if(get('version') == "1.0"){
         document.getElementById("cdnbase").innerText = ` 
-    &lt;link href="https://res.cloudinary.com/thirashacdi/raw/upload/v1619687878/ZealAnimator/v1.0/ZealAnimator-v1.0.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://res.cloudinary.com/thirashacdi/raw/upload/v1619687878/ZealAnimator/v1.0/ZealAnimator-v1.0.css" rel="stylesheet" crossorigin="anonymous" />
         `;
       }else if(get('version') == "1.0m"){
         document.getElementById("cdnbase").innerText = ` 
-    &lt;link href="https://res.cloudinary.com/thirashacdi/raw/upload/v1619701876/ZealAnimator/v1.0/ZealAnimator-v1.0.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://res.cloudinary.com/thirashacdi/raw/upload/v1619701876/ZealAnimator/v1.0/ZealAnimator-v1.0.min.css" rel="stylesheet" crossorigin="anonymous" />
         `;
       }else if(get('version') == "2.0"){
         document.getElementById("cdnbase").innerText = ` 
-    &lt;link href="https://cdn.jsdelivr.net/gh/ThirashaPraween/Zeal-Animator/ZealAnimator-v2.0.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/gh/ThirashaPraween/Zeal-Animator/ZealAnimator-v2.0.css" rel="stylesheet" crossorigin="anonymous" />
         `;
       }else if(get('version') == "2.0m"){
         document.getElementById("cdnbase").innerText = ` 
-    &lt;link href="https://cdn.jsdelivr.net/gh/ThirashaPraween/Zeal-Animator/ZealAnimator-v2.0.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/gh/ThirashaPraween/Zeal-Animator/ZealAnimator-v2.0.min.css" rel="stylesheet" crossorigin="anonymous" />
         `;
       }
       
