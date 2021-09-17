@@ -23,4 +23,8 @@ Zeal Animator Version - 2.0 build code - 25460
   </a>
 </p>
 
+<<<<<<< HEAD
 Thank you for using Zeal Animator!
+=======
+Thank you for using Zeal Animator!
+>>>>>>> 407749096052bc03f17cd895859774c0b8141eac
